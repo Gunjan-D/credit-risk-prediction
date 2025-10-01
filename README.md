@@ -1,7 +1,7 @@
 # Credit Risk Prediction System
 
 ---
-## ⚡ **WANT TO TRY THE APP? [CLICK HERE NOW!](https://gunjan-d.github.io/credit-risk-prediction/index.html)** ⚡
+## ⚡ **Try the FILL DATA DEMO BUTTON OPTION? [CLICK HERE NOW!](https://gunjan-d.github.io/credit-risk-prediction/index.html)** ⚡
 ---
 
 > ## 🚀 **[LIVE APPLICATION ACCESS](https://gunjan-d.github.io/credit-risk-prediction/index.html)** 🚀
@@ -160,3 +160,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 *Last updated: September 2025*
+

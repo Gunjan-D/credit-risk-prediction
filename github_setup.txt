@@ -1,0 +1,34 @@
+# GitHub Repository Setup Commands
+
+# Step 1: Initialize Git Repository
+git init
+
+# Step 2: Add all files
+git add .
+
+# Step 3: Initial commit
+git commit -m "Initial commit: Credit Risk Prediction System
+
+- Added interactive ML-powered credit risk assessment
+- Professional web interface with Bootstrap styling  
+- Real-time predictions with detailed explanations
+- Responsive design for desktop and mobile
+- Educational demo with sample test data
+
+Status: Work in progress - improving dataset and model accuracy"
+
+# Step 4: Add GitHub remote (replace YOUR_USERNAME with your actual GitHub username)
+git remote add origin https://github.com/YOUR_USERNAME/credit-risk-prediction.git
+
+# Step 5: Push to GitHub
+git branch -M main
+git push -u origin main
+
+# Step 6: Enable GitHub Pages (do this in GitHub web interface)
+# Go to Settings > Pages > Source: Deploy from a branch > Branch: main > / (root)
+
+echo "Repository setup complete!"
+echo "Don't forget to:"
+echo "1. Replace YOUR_USERNAME in README.md with your actual GitHub username"
+echo "2. Enable GitHub Pages in repository settings"
+echo "3. Update the demo links with your actual GitHub Pages URL"

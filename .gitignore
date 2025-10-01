@@ -1,0 +1,47 @@
+# Files to ignore in git repository
+
+# System files
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Development files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Dependencies (if using npm in future)
+node_modules/
+
+# Local server files
+localhost_server.py
+fast_localhost.py
+simple_server.py
+start_server.ps1
+open_app.bat
+
+# Python portable installation
+python-portable/
+*.exe
+*.zip
+
+# Backup files
+*.bak
+*.backup
+
+# OS generated files
+.DS_Store?
+ehthumbs.db
+Icon?

@@ -1,0 +1,8 @@
+title: Credit Risk Prediction System
+description: ML-powered Credit Risk Assessment with Explainable AI
+theme: minima
+show_downloads: false
+google_analytics: 
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed

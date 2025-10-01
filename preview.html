@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS560 Credit Risk Prediction - Preview</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(90deg, #003366, #00509e);
+            color: white;
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+            width: 100%; 
+            max-width: 900px; 
+            margin: auto; 
+            margin-top: 50px;
+        }
+        label {
+            font-weight: bold;
+            color: #555555;
+        }
+        .btn-primary {
+            background-color: #00509e;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 10px 10px;
+            width: 400px;
+        }
+        .btn-primary:hover {
+            background-color: #218838;
+            color: black;
+        }
+        .disclaimer {
+            background-color: #00509e;
+            border-radius: 5px;
+            color: #ffffff;
+        }
+        .disclaimer h5 {
+            color: #ffffff;
+        }
+        .preview-note {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid #ffeaa7;
+        }
+        .demo-result {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+        .feature-highlight {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        function showDemo() {
+            // Fill form with demo data
+            document.getElementById('person_age').value = '30';
+            document.getElementById('person_income').value = '50000';
+            document.getElementById('person_emp_length').value = '5.5';
+            document.getElementById('loan_amnt').value = '15000';
+            document.getElementById('loan_int_rate').value = '7.5';
+            document.getElementById('loan_percent_income').value = '0.3';
+            document.getElementById('cb_person_cred_hist_length').value = '10';
+            
+            // Show demo result
+            document.getElementById('demoResult').style.display = 'block';
+            document.getElementById('demoResult').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function resetForm() {
+            document.getElementById('loanForm').reset();
+            document.getElementById('demoResult').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        🏦 AMS560 Credit Risk Prediction System
+    </div>
+    
+    <div class="container">
+        <div class="preview-note">
+            <h5><strong>📋 Application Preview</strong></h5>
+            <p>This is a preview of your <strong>Credit Risk Prediction Web Application</strong>. 
+            The actual Flask app will process this form using your trained Random Forest model and provide 
+            AI-powered explanations using SHAP values.</p>
+            <button onclick="showDemo()" class="btn btn-warning me-2">🎯 Fill Demo Data</button>
+            <button onclick="resetForm()" class="btn btn-secondary">🔄 Reset Form</button>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-container">
+                    <h3 class="text-center">🏦 Loan Application Form</h3>
+                    <form id="loanForm" onsubmit="showDemo(); return false;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="person_age" class="form-label">👤 Age:</label>
+                                <input type="number" id="person_age" name="person_age" class="form-control" placeholder="Enter your age (e.g., 30)" step="any">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="person_income" class="form-label">💰 Annual Income:</label>
+                                <input type="number" id="person_income" name="person_income" class="form-control" placeholder="Enter your annual income (e.g., 50000)" step="any">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label for="person_emp_length" class="form-label">💼 Employment Length (Years):</label>
+                                <input type="number" id="person_emp_length" name="person_emp_length" class="form-control" placeholder="Years of employment (e.g., 5.5)" step="any">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="loan_amnt" class="form-label">💵 Loan Amount:</label>
+                                <input type="number" id="loan_amnt" name="loan_amnt" class="form-control" placeholder="Enter loan amount (e.g., 15000)" step="any">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label for="loan_int_rate" class="form-label">📊 Interest Rate (%):</label>
+                                <input type="number" id="loan_int_rate" name="loan_int_rate" class="form-control" placeholder="Interest rate (e.g., 7.5)" step="any">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="loan_percent_income" class="form-label">📈 Loan % of Income:</label>
+                                <input type="number" id="loan_percent_income" name="loan_percent_income" class="form-control" placeholder="Percentage of income (e.g., 0.3)" step="any">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label for="cb_person_cred_hist_length" class="form-label">📋 Credit History Length (Years):</label>
+                                <input type="number" id="cb_person_cred_hist_length" name="cb_person_cred_hist_length" class="form-control" placeholder="Credit history length (e.g., 10)" step="any">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="person_home_ownership" class="form-label">🏠 Home Ownership:</label>
+                                <select name="person_home_ownership" class="form-select">
+                                    <option value="MORTGAGE">🏠 MORTGAGE</option>
+                                    <option value="RENT">🏢 RENT</option>
+                                    <option value="OWN">🏡 OWN</option>
+                                    <option value="OTHER">🏘️ OTHER</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label for="loan_intent" class="form-label">🎯 Loan Purpose:</label>
+                                <select name="loan_intent" class="form-select">
+                                    <option value="DEBTCONSOLIDATION">💳 DEBT CONSOLIDATION</option>
+                                    <option value="EDUCATION">🎓 EDUCATION</option>
+                                    <option value="HOMEIMPROVEMENT">🔨 HOME IMPROVEMENT</option>
+                                    <option value="MEDICAL">🏥 MEDICAL</option>
+                                    <option value="PERSONAL">👤 PERSONAL</option>
+                                    <option value="VENTURE">🚀 BUSINESS VENTURE</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="loan_grade" class="form-label">⭐ Loan Grade:</label>
+                                <select name="loan_grade" class="form-select">
+                                    <option value="A">A - Excellent</option>
+                                    <option value="B">B - Very Good</option>
+                                    <option value="C">C - Good</option>
+                                    <option value="D">D - Fair</option>
+                                    <option value="E">E - Poor</option>
+                                    <option value="F">F - Very Poor</option>
+                                    <option value="G">G - High Risk</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <label for="cb_person_default_on_file" class="form-label">⚠️ Previous Default:</label>
+                                <select name="cb_person_default_on_file" class="form-select">
+                                    <option value="N">❌ No</option>
+                                    <option value="Y">⚠️ Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary mt-4">🔮 Predict Loan Approval</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Features and Demo Section -->
+            <div class="col-md-4 mt-5">
+                <div class="disclaimer p-3">
+                    <h5>📊 ML Model Features</h5>
+                    <div class="feature-highlight">
+                        <strong>🤖 Random Forest Classifier</strong><br>
+                        Trained on credit risk dataset
+                    </div>
+                    <div class="feature-highlight">
+                        <strong>🔍 SHAP Explainability</strong><br>
+                        AI explains each decision
+                    </div>
+                    <div class="feature-highlight">
+                        <strong>📈 Real-time Processing</strong><br>
+                        Instant predictions with suggestions
+                    </div>
+                </div>
+                
+                <div class="disclaimer p-3 mt-3">
+                    <h5>⚠️ Dataset Disclaimer</h5>
+                    <p>
+                        This model uses a Kaggle "Credit Risk" dataset for educational purposes. 
+                        Results should not be used for actual financial decisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo Result Section -->
+        <div id="demoResult" class="demo-result">
+            <h3>✅ Demo Prediction Result: <strong>APPROVED</strong></h3>
+            <h5>🎯 Positive Factors Contributing to Approval:</h5>
+            <ul>
+                <li><strong>📋 Credit History Length (10 years):</strong> Long credit history demonstrates financial reliability</li>
+                <li><strong>👤 Age (30 years):</strong> Mature age indicates financial stability</li>
+                <li><strong>💰 Income Level ($50,000):</strong> Adequate income supports loan repayment capability</li>
+            </ul>
+            <div class="alert alert-info">
+                <strong>🤖 AI Explanation:</strong> The machine learning model analyzed all your financial factors and determined 
+                you have a <strong>high probability of loan approval</strong> based on your stable employment, adequate income, 
+                and strong credit history.
+            </div>
+            <p><em>💡 This is a demo result. The actual Flask application would use your trained ML models for real predictions.</em></p>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4>🚀 How to Run Your Complete Application on localhost:3000</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>📋 Required Files (You Have These!):</h5>
+                                <ul>
+                                    <li>✅ <code>app.py</code> - Flask web server</li>
+                                    <li>✅ <code>rf_model.pkl</code> - Random Forest model</li>
+                                    <li>✅ <code>scaler.pkl</code> - Data preprocessor</li>
+                                    <li>✅ <code>shap_explainer.pkl</code> - AI explainer</li>
+                                    <li>✅ <code>templates/</code> - HTML templates</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>⚡ Quick Setup Commands:</h5>
+                                <div class="bg-dark text-light p-3 rounded">
+                                    <code>
+                                    # Navigate to your project<br>
+                                    cd "Final\Reportfiles"<br><br>
+                                    # Install requirements<br>
+                                    pip install flask pandas scikit-learn shap<br><br>
+                                    # Run the application<br>
+                                    python app.py<br><br>
+                                    # Open: http://localhost:3000
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

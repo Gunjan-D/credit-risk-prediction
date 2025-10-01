@@ -92,7 +92,7 @@ To run locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/credit-risk-prediction.git
+git clone https://github.com/Gunjan-D/credit-risk-prediction.git
 
 # Navigate to project directory
 cd credit-risk-prediction
@@ -157,5 +157,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ⭐ **Star this repo if you find it helpful!** ⭐
+
 
 *Last updated: September 2025*

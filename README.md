@@ -27,7 +27,7 @@ An advanced **Machine Learning-powered Credit Risk Prediction System** that eval
 
 ### Alternative Links:
 Try the **FILL DEMO DATA BUTTON OPTION**
-- **[FILL DEMO DATA BUTTON OPTION](https://gunjan-d.github.io/credit-risk-prediction/index.html)**
+- **[Try FILL DEMO DATA BUTTON OPTION](https://gunjan-d.github.io/credit-risk-prediction/index.html)**
 - **[Main Demo](https://gunjan-d.github.io/credit-risk-prediction/)**
 
 ### Sample Test Data:
@@ -157,6 +157,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 *Last updated: September 2025*
+
 
 
 

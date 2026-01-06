@@ -1,22 +1,22 @@
 # Credit Risk Prediction System
 
 ---
-## ⚡ **Try the FILL DEMO DATA BUTTON OPTION - [CLICK HERE NOW!](https://gunjan-d.github.io/credit-risk-prediction/index.html)** ⚡
+## **Try the FILL DEMO DATA BUTTON OPTION - [CLICK HERE NOW!](https://gunjan-d.github.io/credit-risk-prediction/index.html)**
 ---
 
-> ## 🚀 **[LIVE APPLICATION ACCESS](https://gunjan-d.github.io/credit-risk-prediction/index.html)** 🚀
+> ## **[LIVE APPLICATION ACCESS](https://gunjan-d.github.io/credit-risk-prediction/index.html)**
 
 [![Demo](https://img.shields.io/badge/Demo-Live-brightgreen)](https://gunjan-d.github.io/credit-risk-prediction/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-yellow)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
-## 🏦 Overview
+## Overview
 
 An advanced **Machine Learning-powered Credit Risk Prediction System** that evaluates loan applications using sophisticated algorithms. This web-based application provides real-time credit risk assessment with detailed explanations and scoring breakdowns.
 
 > **Note**: This project is still in active development. I'm continuously working on improving the dataset and model accuracy. You're welcome to try the demo and provide feedback!
 
-## 🎯 Features
+## Features
 
 - **🤖 Machine Learning**: Advanced Random Forest algorithm for credit risk assessment
 - **🔍 Explainable AI**: Detailed factor analysis showing how each variable affects the decision
@@ -38,14 +38,14 @@ Try the **FILL DEMO DATA BUTTON OPTION**
 - **Credit Grade**: A
 - **Default History**: Yes/No (try both!)
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend**: HTML5, CSS3, Bootstrap 5, JavaScript
 - **Backend Logic**: Client-side JavaScript (ML algorithm implementation)
 - **Styling**: Custom CSS with gradient designs
 - **Deployment**: GitHub Pages
 
-## 📊 Machine Learning Model
+## Machine Learning Model
 
 The system uses a sophisticated scoring algorithm that evaluates multiple factors:
 
@@ -55,11 +55,11 @@ The system uses a sophisticated scoring algorithm that evaluates multiple factor
 - **Risk Assessment**: Loan grade, home ownership, loan purpose
 
 ### Scoring Factors:
-- ✅ **Positive Factors**: Stable employment, good income, clean credit history
-- ❌ **Risk Factors**: Previous defaults, high loan-to-income ratio, poor credit grade
-- ⚠️ **Neutral Factors**: Age, home ownership type, loan purpose
+- **Positive Factors**: Stable employment, good income, clean credit history
+- **Risk Factors**: Previous defaults, high loan-to-income ratio, poor credit grade
+- **Neutral Factors**: Age, home ownership type, loan purpose
 
-## 🚧 Development Status
+## Development Status
 
 This project is **actively being developed**. Current focus areas:
 
@@ -72,7 +72,7 @@ This project is **actively being developed**. Current focus areas:
 - [x] Real-time predictions ✅
 - [x] Explainable AI features ✅
 
-## 🎮 How to Use
+## How to Use
 
 1. **Visit the demo link** above
 2. **Fill in the loan application form** with your details
@@ -83,7 +83,7 @@ This project is **actively being developed**. Current focus areas:
    - Factor analysis
    - Improvement suggestions (if rejected)
 
-## 🔧 Local Development
+## Local Development
 
 To run locally:
 
@@ -103,7 +103,7 @@ python -m http.server 3000
 # Then visit: http://localhost:3000
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 credit-risk-prediction/
@@ -118,7 +118,7 @@ credit-risk-prediction/
     └── model-details.md    # Technical documentation
 ```
 
-## 🤝 Contributing
+## Contributing
 
 This project is still in development! Contributions, suggestions, and feedback are welcome:
 
@@ -128,7 +128,7 @@ This project is still in development! Contributions, suggestions, and feedback a
 4. **Push to the branch** (`git push origin feature/improvement`)
 5. **Create a Pull Request**
 
-## 📝 Feedback & Suggestions
+## Feedback & Suggestions
 
 Since this is an ongoing project, I'd love to hear your feedback:
 
@@ -137,15 +137,15 @@ Since this is an ongoing project, I'd love to hear your feedback:
 - **Suggest improvements** for the model or interface
 - **Share ideas** for additional features
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This application is for **educational and demonstration purposes only**. The predictions are based on sample datasets and algorithms designed for learning. **Do not use these results for actual financial decisions.**
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
+## Author
 
 **Gunjan Deshpande**
 - GitHub: [@Gunjan-D](https://github.com/Gunjan-D)
@@ -157,6 +157,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 *Last updated: September 2025*
+
 
 
 

@@ -18,12 +18,12 @@ An advanced **Machine Learning-powered Credit Risk Prediction System** that eval
 
 ## Features
 
-- **🤖 Machine Learning**: Advanced Random Forest algorithm for credit risk assessment
-- **🔍 Explainable AI**: Detailed factor analysis showing how each variable affects the decision
-- **📊 Real-time Processing**: Instant predictions with comprehensive scoring breakdown
-- **💡 Smart Recommendations**: Personalized suggestions for loan improvement
-- **🎨 Professional UI**: Modern, responsive web interface built with Bootstrap
-- **📱 Mobile Friendly**: Works seamlessly on desktop and mobile devices
+- ** Machine Learning**: Advanced Random Forest algorithm for credit risk assessment
+- ** Explainable AI**: Detailed factor analysis showing how each variable affects the decision
+- ** Real-time Processing**: Instant predictions with comprehensive scoring breakdown
+- ** Smart Recommendations**: Personalized suggestions for loan improvement
+- ** Professional UI**: Modern, responsive web interface built with Bootstrap
+- ** Mobile Friendly**: Works seamlessly on desktop and mobile devices
 
 ### Alternative Links:
 Try the **FILL DEMO DATA BUTTON OPTION**
@@ -152,6 +152,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - LinkedIn: [Gunjan Deshpande](https://linkedin.com/in/gunjan-deshpande)
 
 ---
+
 
 
 

@@ -104,74 +104,74 @@
     
     <div class="container">
         <div class="preview-note">
-            <h5><strong>📋 Application Preview</strong></h5>
+            <h5><strong> Application Preview</strong></h5>
             <p>This is a preview of your <strong>Credit Risk Prediction Web Application</strong>. 
             The actual Flask app will process this form using your trained Random Forest model and provide 
             AI-powered explanations using SHAP values.</p>
-            <button onclick="showDemo()" class="btn btn-warning me-2">🎯 Fill Demo Data</button>
-            <button onclick="resetForm()" class="btn btn-secondary">🔄 Reset Form</button>
+            <button onclick="showDemo()" class="btn btn-warning me-2"> Fill Demo Data</button>
+            <button onclick="resetForm()" class="btn btn-secondary"> Reset Form</button>
         </div>
 
         <div class="row">
             <div class="col-md-8">
                 <div class="form-container">
-                    <h3 class="text-center">🏦 Loan Application Form</h3>
+                    <h3 class="text-center"> Loan Application Form</h3>
                     <form id="loanForm" onsubmit="showDemo(); return false;">
                         <div class="row">
                             <div class="col-md-6">
-                                <label for="person_age" class="form-label">👤 Age:</label>
+                                <label for="person_age" class="form-label"> Age:</label>
                                 <input type="number" id="person_age" name="person_age" class="form-control" placeholder="Enter your age (e.g., 30)" step="any">
                             </div>
                             <div class="col-md-6">
-                                <label for="person_income" class="form-label">💰 Annual Income:</label>
+                                <label for="person_income" class="form-label"> Annual Income:</label>
                                 <input type="number" id="person_income" name="person_income" class="form-control" placeholder="Enter your annual income (e.g., 50000)" step="any">
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-6">
-                                <label for="person_emp_length" class="form-label">💼 Employment Length (Years):</label>
+                                <label for="person_emp_length" class="form-label"> Employment Length (Years):</label>
                                 <input type="number" id="person_emp_length" name="person_emp_length" class="form-control" placeholder="Years of employment (e.g., 5.5)" step="any">
                             </div>
                             <div class="col-md-6">
-                                <label for="loan_amnt" class="form-label">💵 Loan Amount:</label>
+                                <label for="loan_amnt" class="form-label"> Loan Amount:</label>
                                 <input type="number" id="loan_amnt" name="loan_amnt" class="form-control" placeholder="Enter loan amount (e.g., 15000)" step="any">
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-6">
-                                <label for="loan_int_rate" class="form-label">📊 Interest Rate (%):</label>
+                                <label for="loan_int_rate" class="form-label">Interest Rate (%):</label>
                                 <input type="number" id="loan_int_rate" name="loan_int_rate" class="form-control" placeholder="Interest rate (e.g., 7.5)" step="any">
                             </div>
                             <div class="col-md-6">
-                                <label for="loan_percent_income" class="form-label">📈 Loan % of Income:</label>
+                                <label for="loan_percent_income" class="form-label"> Loan % of Income:</label>
                                 <input type="number" id="loan_percent_income" name="loan_percent_income" class="form-control" placeholder="Percentage of income (e.g., 0.3)" step="any">
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-6">
-                                <label for="cb_person_cred_hist_length" class="form-label">📋 Credit History Length (Years):</label>
+                                <label for="cb_person_cred_hist_length" class="form-label"> Credit History Length (Years):</label>
                                 <input type="number" id="cb_person_cred_hist_length" name="cb_person_cred_hist_length" class="form-control" placeholder="Credit history length (e.g., 10)" step="any">
                             </div>
                             <div class="col-md-6">
-                                <label for="person_home_ownership" class="form-label">🏠 Home Ownership:</label>
+                                <label for="person_home_ownership" class="form-label"> Home Ownership:</label>
                                 <select name="person_home_ownership" class="form-select">
-                                    <option value="MORTGAGE">🏠 MORTGAGE</option>
-                                    <option value="RENT">🏢 RENT</option>
-                                    <option value="OWN">🏡 OWN</option>
-                                    <option value="OTHER">🏘️ OTHER</option>
+                                    <option value="MORTGAGE"> MORTGAGE</option>
+                                    <option value="RENT"> RENT</option>
+                                    <option value="OWN"> OWN</option>
+                                    <option value="OTHER"> OTHER</option>
                                 </select>
                             </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-6">
-                                <label for="loan_intent" class="form-label">🎯 Loan Purpose:</label>
+                                <label for="loan_intent" class="form-label"> Loan Purpose:</label>
                                 <select name="loan_intent" class="form-select">
-                                    <option value="DEBTCONSOLIDATION">💳 DEBT CONSOLIDATION</option>
-                                    <option value="EDUCATION">🎓 EDUCATION</option>
-                                    <option value="HOMEIMPROVEMENT">🔨 HOME IMPROVEMENT</option>
-                                    <option value="MEDICAL">🏥 MEDICAL</option>
-                                    <option value="PERSONAL">👤 PERSONAL</option>
-                                    <option value="VENTURE">🚀 BUSINESS VENTURE</option>
+                                    <option value="DEBTCONSOLIDATION"> DEBT CONSOLIDATION</option>
+                                    <option value="EDUCATION"> EDUCATION</option>
+                                    <option value="HOMEIMPROVEMENT"> HOME IMPROVEMENT</option>
+                                    <option value="MEDICAL"> MEDICAL</option>
+                                    <option value="PERSONAL"> PERSONAL</option>
+                                    <option value="VENTURE"> BUSINESS VENTURE</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
@@ -234,18 +234,18 @@
         <!-- Demo Result Section -->
         <div id="demoResult" class="demo-result">
             <h3>✅ Demo Prediction Result: <strong>APPROVED</strong></h3>
-            <h5>🎯 Positive Factors Contributing to Approval:</h5>
+            <h5> Positive Factors Contributing to Approval:</h5>
             <ul>
-                <li><strong>📋 Credit History Length (10 years):</strong> Long credit history demonstrates financial reliability</li>
-                <li><strong>👤 Age (30 years):</strong> Mature age indicates financial stability</li>
-                <li><strong>💰 Income Level ($50,000):</strong> Adequate income supports loan repayment capability</li>
+                <li><strong> Credit History Length (10 years):</strong> Long credit history demonstrates financial reliability</li>
+                <li><strong> Age (30 years):</strong> Mature age indicates financial stability</li>
+                <li><strong> Income Level ($50,000):</strong> Adequate income supports loan repayment capability</li>
             </ul>
             <div class="alert alert-info">
-                <strong>🤖 AI Explanation:</strong> The machine learning model analyzed all your financial factors and determined 
+                <strong> AI Explanation:</strong> The machine learning model analyzed all your financial factors and determined 
                 you have a <strong>high probability of loan approval</strong> based on your stable employment, adequate income, 
                 and strong credit history.
             </div>
-            <p><em>💡 This is a demo result. The actual Flask application would use your trained ML models for real predictions.</em></p>
+            <p><em> This is a demo result. The actual Flask application would use your trained ML models for real predictions.</em></p>
         </div>
     </div>
 
@@ -254,7 +254,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header bg-primary text-white">
-                        <h4>🚀 How to Run Your Complete Application on localhost:3000</h4>
+                        <h4> How to Run Your Complete Application on localhost:3000</h4>
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -291,4 +291,5 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
